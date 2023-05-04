@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "ukraine",
+  "version": "${version}",
+  "name": "§bUkraine §emod",
+  "description": "Everything you need to know about Ukraine and Ukrainian culture.",
+  "authors": [
+    "§bj§eday"
+  ],
+  "contact": {
+    "homepage": "https://github.com/jdayamx/ukraine",
+    "email": "jday.amx@gmail.com",
+    "sources": "https://github.com/jdayamx/ukraine",
+    "issues": "https://github.com/jdayamx/ukraine/issues",
+    "repo": "https://github.com/jdayamx/ukraine"
+  },
+  "license": "MIT",
+  "icon": "assets/ukraine/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "jday.ukraine.client.UkraineClient"
+    ],
+    "main": [
+      "jday.ukraine.Ukraine"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
