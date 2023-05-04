@@ -2,6 +2,7 @@ package jday.ukraine.block;
 
 import jday.ukraine.Ukraine;
 import jday.ukraine.item.UkraineItemGroup;
+import jday.ukraine.world.tree.RedViburnumSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -45,6 +46,25 @@ public class UkraineBlocks {
             new AnimatedBlock(FabricBlockSettings.of(Material.STONE).sounds(ModSounds.ANIMATED_BLOCK_SOUNDS).strength(1.0f).nonOpaque()));
     */
 
+    public static final Block RED_VIBURNUM_LOG = registerBlock("red_viburnum_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+    public static final Block RED_VIBURNUM_WOOD = registerBlock("red_viburnum_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+    public static final Block STRIPPED_RED_VIBURNUM_LOG = registerBlock("stripped_red_viburnum_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+    public static final Block STRIPPED_RED_VIBURNUM_WOOD = registerBlock("stripped_red_viburnum_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+
+    public static final Block RED_VIBURNUM_PLANKS = registerBlock("red_viburnum_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(3.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+    public static final Block RED_VIBURNUM_LEAVES = registerBlock("red_viburnum_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+
+    public static final Block RED_VIBURNUM_SAPLING = registerBlock("red_viburnum_sapling",
+            new SaplingBlock(new RedViburnumSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+
+
+
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registries.BLOCK, new Identifier(Ukraine.MOD_ID, name), block);
@@ -57,7 +77,7 @@ public class UkraineBlocks {
         return item;
     }
 
-    public static void registerModBlocks() {
+    public static void registerUkraineBlocks() {
         Ukraine.LOGGER.info("Registering ModBlocks for " + Ukraine.MOD_ID);
     }
 }

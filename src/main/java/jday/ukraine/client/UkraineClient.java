@@ -1,5 +1,6 @@
 package jday.ukraine.client;
 
+import jday.ukraine.block.UkraineBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
@@ -8,8 +9,8 @@ import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 public class UkraineClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        //BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_MAPLE_LEAVES, RenderLayer.getCutout());
-        //BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_MAPLE_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.RED_VIBURNUM_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.RED_VIBURNUM_SAPLING, RenderLayer.getCutout());
 
         //EntityRendererRegistry.register(ModEntities.TIGER, TigerRenderer::new);
 

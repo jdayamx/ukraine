@@ -1,0 +1,32 @@
+{
+  "cool_sound": {
+    "subtitle": "sounds.ukraine.cool_sound",
+    "sounds": [
+      "ukraine:cool_sound"
+    ]
+  },
+  "ukraine_ambient": {
+    "sounds": [
+      {
+        "name": "ukraine:ukraine_ambient",
+        "stream": true
+      }
+    ]
+  },
+  "ukraine_lastivochka": {
+    "sounds": [
+      {
+        "name": "ukraine:ukraine_lastivochka",
+        "stream": true
+      }
+    ]
+  },
+  "ukraine_soul": {
+    "sounds": [
+      {
+        "name": "ukraine:ukraine_soul",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -1,8 +1,11 @@
 package jday.ukraine;
 
 import jday.ukraine.block.UkraineBlocks;
+import jday.ukraine.block.UkraineFlammableBlockRegistry;
+import jday.ukraine.data.UkraineWorldGenerator;
 import jday.ukraine.item.UkraineItemGroup;
 import jday.ukraine.item.UkraineItems;
+import jday.ukraine.world.gen.UkraineWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -21,6 +24,8 @@ import net.minecraft.util.math.Box;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import software.bernie.geckolib.GeckoLib;
+
 import java.util.List;
 public class Ukraine implements ModInitializer {
     public static final String MOD_ID = "ukraine";
@@ -29,17 +34,17 @@ public class Ukraine implements ModInitializer {
     @Override
     public void onInitialize() {
         UkraineItemGroup.registerItemGroups();
-        UkraineItems.registerModItems();
-        UkraineBlocks.registerModBlocks();
-        //ModWorldGeneration.generateModWorldGen();
+        UkraineItems.registerUkraineItems();
+        UkraineBlocks.registerUkraineBlocks();
+        UkraineWorldGeneration.generateUkraineWorldGen();
 
         //ModBlockEntities.registerAllBlockEntities();
 
-        //GeckoLib.initialize();
+        GeckoLib.initialize();
 
-        //ModFlammableBlockRegistry.registerFlammableBlocks();
-        //StrippableBlockRegistry.register(ModBlocks.RED_MAPLE_LOG, ModBlocks.STRIPPED_RED_MAPLE_LOG);
-        //StrippableBlockRegistry.register(ModBlocks.RED_MAPLE_WOOD, ModBlocks.STRIPPED_RED_MAPLE_WOOD);
+        UkraineFlammableBlockRegistry.registerFlammableBlocks();
+        StrippableBlockRegistry.register(UkraineBlocks.RED_VIBURNUM_LOG, UkraineBlocks.STRIPPED_RED_VIBURNUM_LOG);
+        StrippableBlockRegistry.register(UkraineBlocks.RED_VIBURNUM_WOOD, UkraineBlocks.STRIPPED_RED_VIBURNUM_WOOD);
 
         //FabricDefaultAttributeRegistry.register(ModEntities.TIGER, TigerEntity.setAttributes());
     }

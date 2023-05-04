@@ -1,6 +1,7 @@
 package jday.ukraine.item;
 
 import jday.ukraine.Ukraine;
+import jday.ukraine.sound.UkraineSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -36,6 +37,13 @@ public class UkraineItems {
     public static final Item MUSIC_BOX_MUSIC_DISC = registerItem("music_box_music_disc",
             new MusicDiscItem(6, ModSounds.MUSIC_BOX, new FabricItemSettings().maxCount(1), 16));
 */
+    public static final Item UKRAINE_AMBIENT_MUSIC_DISC = registerItem("ukraine_ambient_music_disc",
+            new MusicDiscItem(6, UkraineSounds.UKRAINE_AMBIENT, new FabricItemSettings().maxCount(1), 181));
+    public static final Item UKRAINE_LASTIVOCHKA_MUSIC_DISC = registerItem("ukraine_lastivochka_music_disc",
+            new MusicDiscItem(6, UkraineSounds.UKRAINE_LASTIVOCHKA, new FabricItemSettings().maxCount(1), 64));
+    public static final Item UKRAINE_SOUL_MUSIC_DISC = registerItem("ukraine_soul_music_disc",
+            new MusicDiscItem(6, UkraineSounds.UKRAINE_SOUL, new FabricItemSettings().maxCount(1), 120));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Ukraine.MOD_ID, name), item);
     }
@@ -55,13 +63,15 @@ public class UkraineItems {
         //addToItemGroup(UkraineItemGroup.UKRAINE, AMETHYST_CHESTPLATE);
         //addToItemGroup(UkraineItemGroup.UKRAINE, AMETHYST_HELMET);
 
-        //addToItemGroup(UkraineItemGroup.UKRAINE, MUSIC_BOX_MUSIC_DISC);
+        addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_AMBIENT_MUSIC_DISC);
+        addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_LASTIVOCHKA_MUSIC_DISC);
+        addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_SOUL_MUSIC_DISC);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
     }
-    public static void registerModItems() {
+    public static void registerUkraineItems() {
         Ukraine.LOGGER.info("Registering Mod Items for " + Ukraine.MOD_ID);
 
         addItemsToItemGroup();

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ukraine:item/ukraine_lastivochka_music_disc"
+  }
+}

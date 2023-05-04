@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "ukraine:block/trees/red_viburnum_sapling"
+  }
+}

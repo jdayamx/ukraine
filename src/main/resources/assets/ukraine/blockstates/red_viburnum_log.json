@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ukraine:block/trees/red_viburnum_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ukraine:block/trees/red_viburnum_log"
+    },
+    "axis=z": {
+      "model": "ukraine:block/trees/red_viburnum_log_horizontal",
+      "x": 90
+    }
+  }
+}

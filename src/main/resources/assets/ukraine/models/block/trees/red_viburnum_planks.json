@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ukraine:block/trees/red_viburnum_planks"
+  }
+}

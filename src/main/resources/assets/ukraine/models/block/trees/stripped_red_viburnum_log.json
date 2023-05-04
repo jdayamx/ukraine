@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ukraine:block/trees/stripped_red_viburnum_log_top",
+    "side": "ukraine:block/trees/stripped_red_viburnum_log"
+  }
+}

@@ -23,11 +23,18 @@
     ],
     "main": [
       "jday.ukraine.Ukraine"
+    ],
+    "fabric-datagen": [
+      "jday.ukraine.UkraineModDataGenerator"
     ]
   },
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
+    "geckolib": ">=4.1.1",
     "minecraft": "${minecraft_version}"
+  },
+  "suggests": {
+    "another-mod": "*"
   }
 }
