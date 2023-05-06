@@ -47,21 +47,21 @@ public class UkraineBlocks {
     */
 
     public static final Block RED_VIBURNUM_LOG = registerBlock("red_viburnum_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)), UkraineItemGroup.UKRAINE);
     public static final Block RED_VIBURNUM_WOOD = registerBlock("red_viburnum_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)), UkraineItemGroup.UKRAINE);
     public static final Block STRIPPED_RED_VIBURNUM_LOG = registerBlock("stripped_red_viburnum_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)), UkraineItemGroup.UKRAINE);
     public static final Block STRIPPED_RED_VIBURNUM_WOOD = registerBlock("stripped_red_viburnum_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)), UkraineItemGroup.UKRAINE);
 
     public static final Block RED_VIBURNUM_PLANKS = registerBlock("red_viburnum_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(3.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)), UkraineItemGroup.UKRAINE);
     public static final Block RED_VIBURNUM_LEAVES = registerBlock("red_viburnum_leaves",
-            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)), UkraineItemGroup.UKRAINE);
 
     public static final Block RED_VIBURNUM_SAPLING = registerBlock("red_viburnum_sapling",
-            new SaplingBlock(new RedViburnumSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+            new SaplingBlock(new RedViburnumSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)), UkraineItemGroup.UKRAINE);
 
 
 

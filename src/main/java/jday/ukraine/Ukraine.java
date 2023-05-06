@@ -5,6 +5,7 @@ import jday.ukraine.block.UkraineFlammableBlockRegistry;
 import jday.ukraine.data.UkraineWorldGenerator;
 import jday.ukraine.item.UkraineItemGroup;
 import jday.ukraine.item.UkraineItems;
+import jday.ukraine.painting.UkrainePaintings;
 import jday.ukraine.world.gen.UkraineWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -37,7 +38,7 @@ public class Ukraine implements ModInitializer {
         UkraineItems.registerUkraineItems();
         UkraineBlocks.registerUkraineBlocks();
         UkraineWorldGeneration.generateUkraineWorldGen();
-
+        UkrainePaintings.registerPaintings();
         //ModBlockEntities.registerAllBlockEntities();
 
         GeckoLib.initialize();

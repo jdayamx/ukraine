@@ -2,6 +2,9 @@
   "itemgroup.ukraine": "Ukraine",
   "item.ukraine.emblem":"Emblem",
   "item.ukraine.ukraine_ambient_music_disc":"Ukraine ambient music",
-  "item.ukraine.ukraine_ambient_music_disc":"Ukraine ambient music",
-  "item.ukraine.ukraine_ambient_music_disc":"Ukraine ambient music"
+  "item.ukraine.ukraine_ambient_music_disc.desc":"Latest Ukrainian music",
+  "item.ukraine.ukraine_lastivochka_music_disc":"Ukrainian music Shchedryk",
+  "item.ukraine.ukraine_lastivochka_music_disc.desc": "\"Shchedryk\" is a world-famous work Ukrainian composer Mykola Leontovych",
+  "item.ukraine.ukraine_soul_music_disc":"Ukrainian soul music",
+  "item.ukraine.ukraine_soul_music_disc.desc":"Latest Ukrainian music"
 }

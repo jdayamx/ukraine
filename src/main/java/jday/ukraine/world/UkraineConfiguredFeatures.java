@@ -22,10 +22,10 @@ public class UkraineConfiguredFeatures {
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         register(context, RED_VIBURNUM_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(UkraineBlocks.RED_VIBURNUM_LOG),
-                new StraightTrunkPlacer(5, 6, 3),
+                new StraightTrunkPlacer(5, 5, 3),
                 BlockStateProvider.of(UkraineBlocks.RED_VIBURNUM_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 1, 2)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

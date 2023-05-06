@@ -19,7 +19,7 @@ public class UkrainePlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, RED_VIBURNUM_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(UkraineConfiguredFeatures.RED_VIBURNUM_KEY),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(3, 0.3f, 5), UkraineBlocks.RED_VIBURNUM_SAPLING));
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(2, 0.3f, 5), UkraineBlocks.RED_VIBURNUM_SAPLING));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
