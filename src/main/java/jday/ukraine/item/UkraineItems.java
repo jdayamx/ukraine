@@ -31,6 +31,20 @@ public class UkraineItems {
                             .statusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 10 * 40), 2.0f)
                             .build()
             )));
+    public static final Item UKRAINE_SALO = registerItem("ukraine_salo",
+            new AliasedBlockItem(UkraineBlocks.UKRAINE_GARLIC_CROP, new FabricItemSettings().food(
+                    new FoodComponent.Builder()
+                            .hunger(3)
+                            .saturationModifier(0.5f)
+                            .build()
+            )));
+    public static final Item UKRAINE_SALO_FRIED = registerItem("ukraine_salo_fried",
+            new AliasedBlockItem(UkraineBlocks.UKRAINE_GARLIC_CROP, new FabricItemSettings().food(
+                    new FoodComponent.Builder()
+                            .hunger(6)
+                            .saturationModifier(0.5f)
+                            .build()
+            )));
 
     /*
     public static final Item RAW_CITRINE = registerItem("raw_citrine",
@@ -75,6 +89,8 @@ public class UkraineItems {
 
         addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_GARLIC);
         addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_ONION);
+        addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_SALO);
+        addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_SALO_FRIED);
 
         //addToItemGroup(UkraineItemGroup.UKRAINE, CITRINE);
         //addToItemGroup(UkraineItemGroup.UKRAINE, RAW_CITRINE);

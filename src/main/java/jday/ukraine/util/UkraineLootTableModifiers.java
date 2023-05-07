@@ -52,8 +52,8 @@ public class UkraineLootTableModifiers {
                         .conditionally(EntityPropertiesLootCondition.builder(LootContext.EntityTarget.KILLER,
                                 new EntityPredicate.Builder().equipment(EntityEquipmentPredicate.Builder.create()
                                         .mainhand(ItemPredicate.Builder.create().build()).build()).build()))
-                        .with(ItemEntry.builder(UkraineItems.UKRAINE_SOUL_MUSIC_DISC))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                        .with(ItemEntry.builder(UkraineItems.UKRAINE_SALO))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
         });
