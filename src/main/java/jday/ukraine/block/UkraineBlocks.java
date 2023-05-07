@@ -9,13 +9,14 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
+
 public class UkraineBlocks {
     public static final Block UKRAINE_BLOCK = registerBlock("ukraine_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(32.0f).requiresTool()), UkraineItemGroup.UKRAINE);
@@ -74,6 +75,26 @@ public class UkraineBlocks {
     public static final Block UKRAINE_ONION_CROP = registerBlockWithoutItem("onionplant_crop",
             new OnionplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
 
+    public static final Block UKRAINE_SAGEBRUSH = registerBlock("ukraine_sagebrush",
+            new FlowerBlock(StatusEffects.HASTE, 8,
+                    FabricBlockSettings.copy(Blocks.DEAD_BUSH)), UkraineItemGroup.UKRAINE);
+    public static final Block POTTED_UKRAINE_SAGEBRUSH = registerBlockWithoutItem("potted_ukraine_sagebrush",
+            new FlowerPotBlock(UkraineBlocks.UKRAINE_SAGEBRUSH, FabricBlockSettings.copy(Blocks.POTTED_DEAD_BUSH)));
+    public static final Block UKRAINE_THISTLE = registerBlock("ukraine_thistle",
+            new FlowerBlock(StatusEffects.HASTE, 8,
+                    FabricBlockSettings.copy(Blocks.DEAD_BUSH)), UkraineItemGroup.UKRAINE);
+    public static final Block POTTED_UKRAINE_THISTLE = registerBlockWithoutItem("potted_ukraine_thistle",
+            new FlowerPotBlock(UkraineBlocks.UKRAINE_SAGEBRUSH, FabricBlockSettings.copy(Blocks.POTTED_DEAD_BUSH)));
+    public static final Block UKRAINE_TULIP_BLUE = registerBlock("ukraine_tulip_blue",
+            new FlowerBlock(StatusEffects.HASTE, 8,
+                    FabricBlockSettings.copy(Blocks.DEAD_BUSH)), UkraineItemGroup.UKRAINE);
+    public static final Block POTTED_UKRAINE_TULIP_BLUE = registerBlockWithoutItem("potted_ukraine_tulip_blue",
+            new FlowerPotBlock(UkraineBlocks.UKRAINE_SAGEBRUSH, FabricBlockSettings.copy(Blocks.POTTED_DEAD_BUSH)));
+    public static final Block UKRAINE_TULIP_YELLOW = registerBlock("ukraine_tulip_yellow",
+            new FlowerBlock(StatusEffects.HASTE, 8,
+                    FabricBlockSettings.copy(Blocks.DEAD_BUSH)), UkraineItemGroup.UKRAINE);
+    public static final Block POTTED_UKRAINE_TULIP_YELLOW = registerBlockWithoutItem("potted_ukraine_tulip_yellow",
+            new FlowerPotBlock(UkraineBlocks.UKRAINE_SAGEBRUSH, FabricBlockSettings.copy(Blocks.POTTED_DEAD_BUSH)));
 
     private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(Ukraine.MOD_ID, name), block);

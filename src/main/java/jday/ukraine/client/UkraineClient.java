@@ -14,6 +14,15 @@ public class UkraineClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.RED_VIBURNUM_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.RED_VIBURNUM_SAPLING, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.UKRAINE_SAGEBRUSH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.POTTED_UKRAINE_SAGEBRUSH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.UKRAINE_THISTLE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.POTTED_UKRAINE_THISTLE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.UKRAINE_TULIP_BLUE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.POTTED_UKRAINE_TULIP_BLUE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.UKRAINE_TULIP_YELLOW, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.POTTED_UKRAINE_TULIP_YELLOW, RenderLayer.getCutout());
+
         //EntityRendererRegistry.register(ModEntities.TIGER, TigerRenderer::new);
 
         //BlockEntityRendererFactories.register(ModBlockEntities.ANIMATED_BLOCK_ENTITY, AnimatedBlockRenderer::new);
