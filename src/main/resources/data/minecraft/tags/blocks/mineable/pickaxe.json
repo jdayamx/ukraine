@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ukraine:ukraine_block"
+    "ukraine:ukraine_block",
+    "ukraine:g_wall_block"
   ]
 }

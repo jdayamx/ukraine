@@ -9,6 +9,8 @@ import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 public class UkraineClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.UKRAINE_ONION_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.UKRAINE_GARLIC_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.RED_VIBURNUM_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(UkraineBlocks.RED_VIBURNUM_SAPLING, RenderLayer.getCutout());
 

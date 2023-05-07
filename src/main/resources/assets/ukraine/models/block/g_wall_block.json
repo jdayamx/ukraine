@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ukraine:block/wall/g_wall_tb",
+    "side": "ukraine:block/wall/g_wall"
+  }
+}

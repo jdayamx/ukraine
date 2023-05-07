@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "ukraine:block/crops/garlicplant_stage3"
+  }
+}

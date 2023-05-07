@@ -29,6 +29,17 @@ public class UkraineRecipeGenerator extends FabricRecipeProvider {
                 UkraineBlocks.RED_VIBURNUM_PLANKS);
 
         // JUST AN EXAMPLE
+        /*ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, UkraineBlocks.G_WALL_BLOCK)
+                .pattern("#W#")
+                .pattern("W#W")
+                .pattern("#W#")
+                .input('#', Items.CLAY_BALL)
+                .input('W', Items.WEATHERED_COPPER)
+                .criterion(FabricRecipeProvider.hasItem(Items.CLAY_BALL),
+                        FabricRecipeProvider.conditionsFromItem(Items.CLAY_BALL))
+                .criterion(FabricRecipeProvider.hasItem(Items.WEATHERED_COPPER),
+                        FabricRecipeProvider.conditionsFromItem(Items.WEATHERED_COPPER))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(UkraineBlocks.G_WALL_BLOCK)));*/
         /* ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_CITRINE)
                 .pattern("SSS")
                 .pattern("SCS")

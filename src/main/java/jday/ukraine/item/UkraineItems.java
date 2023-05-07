@@ -1,9 +1,12 @@
 package jday.ukraine.item;
 
 import jday.ukraine.Ukraine;
+import jday.ukraine.block.UkraineBlocks;
 import jday.ukraine.sound.UkraineSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -11,6 +14,24 @@ import net.minecraft.util.Identifier;
 public class UkraineItems {
     public static final Item EMBLEM = registerItem("emblem",
             new Item(new FabricItemSettings()));
+
+    public static final Item UKRAINE_GARLIC = registerItem("ukraine_garlic",
+            new AliasedBlockItem(UkraineBlocks.UKRAINE_GARLIC_CROP, new FabricItemSettings().food(
+                    new FoodComponent.Builder()
+                            .hunger(2)
+                            .saturationModifier(0.2f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 10 * 20), 1.0f)
+                            .build()
+            )));
+    public static final Item UKRAINE_ONION = registerItem("ukraine_onion",
+            new AliasedBlockItem(UkraineBlocks.UKRAINE_ONION_CROP, new FabricItemSettings().food(
+                    new FoodComponent.Builder()
+                            .hunger(3)
+                            .saturationModifier(0.4f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 10 * 40), 2.0f)
+                            .build()
+            )));
+
     /*
     public static final Item RAW_CITRINE = registerItem("raw_citrine",
             new Item(new FabricItemSettings()));
@@ -51,6 +72,9 @@ public class UkraineItems {
     public static void addItemsToItemGroup() {
         //addToItemGroup(ItemGroups.INGREDIENTS, EMBLEM);
         addToItemGroup(UkraineItemGroup.UKRAINE, EMBLEM);
+
+        addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_GARLIC);
+        addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_ONION);
 
         //addToItemGroup(UkraineItemGroup.UKRAINE, CITRINE);
         //addToItemGroup(UkraineItemGroup.UKRAINE, RAW_CITRINE);

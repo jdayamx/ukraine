@@ -1,6 +1,8 @@
 package jday.ukraine.block;
 
 import jday.ukraine.Ukraine;
+import jday.ukraine.block.custom.GarlicplantCropBlock;
+import jday.ukraine.block.custom.OnionplantCropBlock;
 import jday.ukraine.item.UkraineItemGroup;
 import jday.ukraine.world.tree.RedViburnumSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -17,6 +19,9 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 public class UkraineBlocks {
     public static final Block UKRAINE_BLOCK = registerBlock("ukraine_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(32.0f).requiresTool()), UkraineItemGroup.UKRAINE);
+
+    public static final Block G_WALL_BLOCK = registerBlock("g_wall_block",
+            new PillarBlock(FabricBlockSettings.of(Material.GOURD).strength(16.0f).requiresTool()), UkraineItemGroup.UKRAINE);
     /*
     public static final Block CITRINE_ORE = registerBlock("citrine_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
@@ -64,7 +69,15 @@ public class UkraineBlocks {
             new SaplingBlock(new RedViburnumSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)), UkraineItemGroup.UKRAINE);
 
 
+    public static final Block UKRAINE_GARLIC_CROP = registerBlockWithoutItem("garlicplant_crop",
+            new GarlicplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+    public static final Block UKRAINE_ONION_CROP = registerBlockWithoutItem("onionplant_crop",
+            new OnionplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
 
+
+    private static Block registerBlockWithoutItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, new Identifier(Ukraine.MOD_ID, name), block);
+    }
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registries.BLOCK, new Identifier(Ukraine.MOD_ID, name), block);
