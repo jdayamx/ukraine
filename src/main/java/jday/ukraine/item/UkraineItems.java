@@ -15,6 +15,11 @@ public class UkraineItems {
     public static final Item EMBLEM = registerItem("emblem",
             new Item(new FabricItemSettings()));
 
+    public static final Item COPPER_NUGGET = registerItem("copper_nugget",
+            new Item(new FabricItemSettings()));
+    public static final Item IRON_NUGGET = registerItem("iron_nugget",
+            new Item(new FabricItemSettings()));
+
     public static final Item UKRAINE_GARLIC = registerItem("ukraine_garlic",
             new AliasedBlockItem(UkraineBlocks.UKRAINE_GARLIC_CROP, new FabricItemSettings().food(
                     new FoodComponent.Builder()
@@ -43,6 +48,13 @@ public class UkraineItems {
                     new FoodComponent.Builder()
                             .hunger(6)
                             .saturationModifier(0.5f)
+                            .build()
+            )));
+    public static final Item UKRAINE_EGG_FRIED = registerItem("ukraine_egg_fried",
+            new AliasedBlockItem(UkraineBlocks.UKRAINE_GARLIC_CROP, new FabricItemSettings().food(
+                    new FoodComponent.Builder()
+                            .hunger(3)
+                            .saturationModifier(0.6f)
                             .build()
             )));
 
@@ -91,6 +103,7 @@ public class UkraineItems {
         addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_ONION);
         addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_SALO);
         addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_SALO_FRIED);
+        addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_EGG_FRIED);
 
         //addToItemGroup(UkraineItemGroup.UKRAINE, CITRINE);
         //addToItemGroup(UkraineItemGroup.UKRAINE, RAW_CITRINE);
@@ -106,6 +119,9 @@ public class UkraineItems {
         addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_AMBIENT_MUSIC_DISC);
         addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_LASTIVOCHKA_MUSIC_DISC);
         addToItemGroup(UkraineItemGroup.UKRAINE, UKRAINE_SOUL_MUSIC_DISC);
+
+        addToItemGroup(UkraineItemGroup.UKRAINE, COPPER_NUGGET);
+        addToItemGroup(UkraineItemGroup.UKRAINE, IRON_NUGGET);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
