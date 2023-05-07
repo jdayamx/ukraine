@@ -1,3 +1,6 @@
 {
-  "parent": "ukraine:block/trees/red_viburnum_sapling"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ukraine:block/trees/red_viburnum_sapling"
+  }
 }
