@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "y"
+  ],
+  "key": {
+    "y": {
+      "item": "ukraine:ukraine_tulip_blue"
+    }
+  },
+  "result": {
+    "item": "minecraft:light_blue_dye",
+    "count": 1
+  }
+}
