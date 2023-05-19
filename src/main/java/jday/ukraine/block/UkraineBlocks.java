@@ -84,17 +84,17 @@ public class UkraineBlocks {
             new FlowerBlock(StatusEffects.HASTE, 8,
                     FabricBlockSettings.copy(Blocks.DEAD_BUSH)), UkraineItemGroup.UKRAINE);
     public static final Block POTTED_UKRAINE_THISTLE = registerBlockWithoutItem("potted_ukraine_thistle",
-            new FlowerPotBlock(UkraineBlocks.UKRAINE_SAGEBRUSH, FabricBlockSettings.copy(Blocks.POTTED_DEAD_BUSH)));
+            new FlowerPotBlock(UkraineBlocks.UKRAINE_THISTLE, FabricBlockSettings.copy(Blocks.POTTED_DEAD_BUSH)));
     public static final Block UKRAINE_TULIP_BLUE = registerBlock("ukraine_tulip_blue",
             new FlowerBlock(StatusEffects.HASTE, 8,
                     FabricBlockSettings.copy(Blocks.DEAD_BUSH)), UkraineItemGroup.UKRAINE);
     public static final Block POTTED_UKRAINE_TULIP_BLUE = registerBlockWithoutItem("potted_ukraine_tulip_blue",
-            new FlowerPotBlock(UkraineBlocks.UKRAINE_SAGEBRUSH, FabricBlockSettings.copy(Blocks.POTTED_DEAD_BUSH)));
+            new FlowerPotBlock(UkraineBlocks.UKRAINE_TULIP_BLUE, FabricBlockSettings.copy(Blocks.POTTED_DEAD_BUSH)));
     public static final Block UKRAINE_TULIP_YELLOW = registerBlock("ukraine_tulip_yellow",
             new FlowerBlock(StatusEffects.HASTE, 8,
                     FabricBlockSettings.copy(Blocks.DEAD_BUSH)), UkraineItemGroup.UKRAINE);
     public static final Block POTTED_UKRAINE_TULIP_YELLOW = registerBlockWithoutItem("potted_ukraine_tulip_yellow",
-            new FlowerPotBlock(UkraineBlocks.UKRAINE_SAGEBRUSH, FabricBlockSettings.copy(Blocks.POTTED_DEAD_BUSH)));
+            new FlowerPotBlock(UkraineBlocks.UKRAINE_TULIP_YELLOW, FabricBlockSettings.copy(Blocks.POTTED_DEAD_BUSH)));
 
     private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(Ukraine.MOD_ID, name), block);
