@@ -28,7 +28,7 @@ public class UkraineItems {
             new Item(new FabricItemSettings()));
     public static final Item UKRAINE_FLAX_FIBER = registerItem("ukraine_flax_fiber",
             new Item(new FabricItemSettings()));
-    public static final Item UKRAINE_FLAX_FABRIC = registerItem("ukraine_flex_fabric",
+    public static final Item UKRAINE_FLAX_FABRIC = registerItem("ukraine_flax_fabric",
             new Item(new FabricItemSettings()));
 
     public static final Item UKRAINE_GARLIC = registerItem("ukraine_garlic",
