@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "f"
+  ],
+  "key": {
+    "f": {
+      "item": "ukraine:ukraine_flax"
+    }
+  },
+  "result": {
+    "item": "ukraine:ukraine_flax_fiber",
+    "count": 3
+  }
+}

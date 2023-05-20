@@ -37,14 +37,14 @@ public class UkraineLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
             }
 
-            /*if(GRASS_BLOCK_ID.equals(id)) {
+            if(GRASS_BLOCK_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.35f)) // Drops 35% of the time
-                        .with(ItemEntry.builder(UkraineItems.EMBLEM))
+                        .with(ItemEntry.builder(UkraineItems.UKRAINE_FLAX_SEEDS))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
-            }*/
+            }
 
             if(PIG_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()

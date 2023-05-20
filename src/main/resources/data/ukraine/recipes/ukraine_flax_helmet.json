@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "ukraine:ukraine_flex_fabric"
+    }
+  },
+  "result": {
+    "item": "ukraine:ukraine_flax_helmet",
+    "count": 1
+  }
+}

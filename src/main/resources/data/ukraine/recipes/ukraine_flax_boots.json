@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "LRL"
+  ],
+  "key": {
+    "#": {
+      "item": "ukraine:ukraine_flex_fabric"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "R": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "result": {
+    "item": "ukraine:ukraine_flax_boots",
+    "count": 1
+  }
+}

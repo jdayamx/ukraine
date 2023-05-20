@@ -1,6 +1,7 @@
 package jday.ukraine.block;
 
 import jday.ukraine.Ukraine;
+import jday.ukraine.block.custom.FlaxplantCropBlock;
 import jday.ukraine.block.custom.GarlicplantCropBlock;
 import jday.ukraine.block.custom.OnionplantCropBlock;
 import jday.ukraine.item.UkraineItemGroup;
@@ -69,7 +70,8 @@ public class UkraineBlocks {
     public static final Block RED_VIBURNUM_SAPLING = registerBlock("red_viburnum_sapling",
             new SaplingBlock(new RedViburnumSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)), UkraineItemGroup.UKRAINE);
 
-
+    public static final Block UKRAINE_FLAX_CROP = registerBlockWithoutItem("flaxplant_crop",
+            new FlaxplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block UKRAINE_GARLIC_CROP = registerBlockWithoutItem("garlicplant_crop",
             new GarlicplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block UKRAINE_ONION_CROP = registerBlockWithoutItem("onionplant_crop",

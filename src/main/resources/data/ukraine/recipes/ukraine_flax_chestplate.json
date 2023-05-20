@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#R#",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "ukraine:ukraine_flex_fabric"
+    },
+    "R": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "result": {
+    "item": "ukraine:ukraine_flax_chestplate",
+    "count": 1
+  }
+}
