@@ -2,6 +2,7 @@ package jday.ukraine.item;
 
 import jday.ukraine.Ukraine;
 import jday.ukraine.block.UkraineBlocks;
+import jday.ukraine.item.custom.UkraineArmorItem;
 import jday.ukraine.item.custom.UkraineArmorMaterials;
 import jday.ukraine.sound.UkraineSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -28,7 +29,7 @@ public class UkraineItems {
             new Item(new FabricItemSettings()));
     public static final Item UKRAINE_FLAX_FIBER = registerItem("ukraine_flax_fiber",
             new Item(new FabricItemSettings()));
-    public static final Item UKRAINE_FLAX_FABRIC = registerItem("ukraine_flex_fabric",
+    public static final Item UKRAINE_FLAX_FABRIC = registerItem("ukraine_flax_fabric",
             new Item(new FabricItemSettings()));
 
     public static final Item UKRAINE_GARLIC = registerItem("ukraine_garlic",
@@ -96,16 +97,16 @@ public class UkraineItems {
             new MusicDiscItem(6, ModSounds.MUSIC_BOX, new FabricItemSettings().maxCount(1), 16));
 */
     public static final Item UKRAINE_FLAX_HELMET = registerItem("ukraine_flax_helmet",
-            new ArmorItem(UkraineArmorMaterials.FLAX_FABRIC, ArmorItem.Type.HELMET,
+            new UkraineArmorItem(UkraineArmorMaterials.FLAX_FABRIC, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item UKRAINE_FLAX_CHESTPLATE = registerItem("ukraine_flax_chestplate",
-            new ArmorItem(UkraineArmorMaterials.FLAX_FABRIC, ArmorItem.Type.CHESTPLATE,
+            new UkraineArmorItem(UkraineArmorMaterials.FLAX_FABRIC, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item UKRAINE_FLAX_LEGGINGS = registerItem("ukraine_flax_leggings",
-            new ArmorItem(UkraineArmorMaterials.FLAX_FABRIC, ArmorItem.Type.LEGGINGS,
+            new UkraineArmorItem(UkraineArmorMaterials.FLAX_FABRIC, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item UKRAINE_FLAX_BOOTS = registerItem("ukraine_flax_boots",
-            new ArmorItem(UkraineArmorMaterials.FLAX_FABRIC, ArmorItem.Type.BOOTS,
+            new UkraineArmorItem(UkraineArmorMaterials.FLAX_FABRIC, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
     public static final Item UKRAINE_AMBIENT_MUSIC_DISC = registerItem("ukraine_ambient_music_disc",
             new MusicDiscItem(6, UkraineSounds.UKRAINE_AMBIENT, new FabricItemSettings().maxCount(1), 181));

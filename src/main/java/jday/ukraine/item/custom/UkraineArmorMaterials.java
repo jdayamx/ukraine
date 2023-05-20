@@ -12,12 +12,12 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum UkraineArmorMaterials implements ArmorMaterial {
-    FLAX_FABRIC("flax_fabric", 27, new int[]{3, 5, 9, 3}, 25, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
+    FLAX_FABRIC("flax_fabric", 27, new int[]{2, 5, 9, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
             0.0F, 0.0F, () -> {
         return Ingredient.ofItems(UkraineItems.UKRAINE_FLAX_FABRIC);
     });
 
-    private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
+    private static final int[] BASE_DURABILITY = new int[]{7, 6, 8, 5};
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;
